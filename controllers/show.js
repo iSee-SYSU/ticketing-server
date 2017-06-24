@@ -18,7 +18,7 @@ exports.getShowDetail = async function(ctx) {
       throw new ApiError(ApiErrorName.FETCH_ERROR, result);
     }
   } catch(err) {
-    throw new ApiError(ApiErrorName.FETCH_ERROR, `Request '${urlConfig.movieHot}' error:\n ${err.message}`);
+    throw new ApiError(ApiErrorName.FETCH_ERROR, `Request '${urlConfig.show}' error:\n ${err.message}`);
   }
 }
 
@@ -37,6 +37,6 @@ exports.getShow = async function(ctx) {
       throw new ApiError(ApiErrorName.FETCH_ERROR, result);
     }
   } catch(err) {
-    throw new ApiError(ApiErrorName.FETCH_ERROR, `Request '${urlConfig.movieHot}' error:\n ${err.message}`);
+    throw new ApiError(ApiErrorName.FETCH_ERROR, `Request '${urlConfig.show}' error:\n ${err.message}`);
   }
 }
